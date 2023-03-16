@@ -1,6 +1,10 @@
+/*main*/
 #include <stdio.h>
 
 int main(void)
 {
+    /*printing*/
 printf("with proper grammar, but the outcome is a piece of art,\n");
-return (0);}
+    /*end*/
+return (0);
+}
