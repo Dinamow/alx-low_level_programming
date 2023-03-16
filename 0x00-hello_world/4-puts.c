@@ -4,7 +4,7 @@
 /*
 *main - start
 *allocate space for string
-*type the string 
+*type the string
 */
 int main(void)
 {
