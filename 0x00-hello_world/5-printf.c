@@ -1,7 +1,7 @@
 /*main*/
 #include <stdio.h>
 
-    /*main func*/
+//func 
 int main(void)
 {
     /*printing*/
