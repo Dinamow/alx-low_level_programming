@@ -1,6 +1,9 @@
 /*main*/
 #include <stdio.h>
-
+/**
+ * main - start of the func 
+ * printing a string
+*/
 int main(void)
 {
     /*printing*/
