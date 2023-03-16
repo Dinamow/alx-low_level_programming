@@ -3,7 +3,7 @@
 /**
  * main - start of the func
  * printing a string
- * end and return value 0
+ * Return: 0(success)
 */
 int main(void)
 {
