@@ -5,7 +5,7 @@
  * main - entry point
  * allocate storage for string
  * type string
- * return: 0(success)
+ * Return: 0(success)
 */
 int main(void)
 {
