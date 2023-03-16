@@ -1,10 +1,10 @@
 /* main.c */
 #include <stdio.h>
 #include <string.h>
-/*
-*main - start
-*allocate space for string
-*type the string
+/**
+ * allocate storage for string
+ * type string
+ * return: 0 (success)
 */
 int main(void)
 {
