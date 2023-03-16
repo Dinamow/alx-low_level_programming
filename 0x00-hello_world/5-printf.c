@@ -1,8 +1,9 @@
 /*main*/
 #include <stdio.h>
 /**
- * main - start of the func 
+ * main - start of the func
  * printing a string
+ * end and return 0
 */
 int main(void)
 {
