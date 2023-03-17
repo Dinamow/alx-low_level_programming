@@ -1,15 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - start point
- * some stuff
- * Return: 0 (success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char char1 = '1';
-char char2 = '\n';
-for (char1 = '1'; char1 <= '9'; char1++)
-putchar(char1);
-putchar(char2);
+int a = 0;
+while (a < 10)
+{
+putchar(a + '0');
+a++;
+}
+putchar('\n');
 return (0);
 }
