@@ -19,6 +19,7 @@ int main(void)
      int q;
      int nums[1000];
      int s;
+     int repeat
 
      srand(time(0));
      n = rand() - RAND_MAX / 2;
@@ -31,7 +32,7 @@ int main(void)
                s = n / ten;
                ten = ten * 10;
           }
-          int repeat = lenth;
+          repeat = lenth;
           for (int i = 0; i < lenth; i++)
           {
                s = n;
