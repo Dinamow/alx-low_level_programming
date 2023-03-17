@@ -19,7 +19,7 @@ int main(void)
      int q;
      int nums[1000];
      int s;
-     int repeat
+     int repeat;
 
      srand(time(0));
      n = rand() - RAND_MAX / 2;
