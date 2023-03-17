@@ -12,8 +12,10 @@ while (a < 10)
 putchar(a + '0');
 a++;
 if (a == 10)
+{
 putchar('\n');
 return (0);
+}
 putchar(',');
 putchar(' ');
 }
