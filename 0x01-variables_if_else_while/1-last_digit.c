@@ -18,10 +18,11 @@ int main(void)
      int answer;
      int q;
      int nums[1000];
+     int s;
 
      srand(time(0));
      n = rand() - RAND_MAX / 2;
-     int s = n;
+     s = n;
      q = s;
      if (n > 0)
      {
