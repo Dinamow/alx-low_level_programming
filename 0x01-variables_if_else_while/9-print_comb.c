@@ -16,4 +16,5 @@ return (0);
 putchar(',');
 putchar(' ');
 }
+return (1);
 }
