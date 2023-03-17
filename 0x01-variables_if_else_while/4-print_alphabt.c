@@ -1,21 +1,26 @@
+/*
+ * File: 4-print_alphabt.c
+ * Auth: Brennan D Baraban
+ */
+
 #include <stdio.h>
+
 /**
- * main - start point
- * some stuff
- * Return: 0 (success)
-*/
+ * main - Prints the alphabet in lowercase, except for q and e.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-char char1 = 'a';
-char char2 = '\n';
-char char3 = 'f';
-char char4 = 'r';
-for (char1 = 'a'; char1 <= 'd'; char1++)
-putchar(char1);
-for (char3 = 'f'; char3 <= 'p'; char3++)
-putchar(char3);
-for (char4 = 'r'; char4 <= 'z'; char4++)
-putchar(char4);
-putchar(char2);
+char letter;
+
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+	if (letter != 'e' && letter != 'q')
+		putchar(letter);
+}
+
+putchar('\n');
+
 return (0);
 }
