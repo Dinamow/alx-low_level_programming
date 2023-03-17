@@ -28,36 +28,29 @@ int main(void)
      if (n > 0)
      {
           for(lenth = 0; s >= 1; lenth++)
-          {
                s = n / ten;
                ten = ten * 10;
-          }
+          
           repeat = lenth;
           for (int i = 0; i < lenth; i++)
-          {
                s = n;
                for (int j = 0; j < repeat - 1; j++)
-               {
                     numbers = numbers * 10;
-               }
                if (i == 0)
                {
                     for (int j = 0; s > 1; j++)
-                    {
                          int s1 = s;
                          s = s / (numbers * (j + 1));
                          if (s == 0)
                          {
                               nums[i] = s1 * numbers;
                          }
-                    }
                }
                else
                {
                     s = q;
                     int lol = 1;
                     for (int j = 0; lol >= 1; j++)
-                    {
                          lol = s / (nums[i - 1] + (numbers * (j + 1)));
                          if(s / (nums[i - 1] + (numbers * (j + 1))) == 0)
                          {
@@ -65,50 +58,41 @@ int main(void)
                               {
                                    nums[i] = j;
                               }
-                              
                               nums[i] = (nums[i - 1] + (j * numbers));
-                         }
-                    }                    
+                         }                  
                }
                repeat = repeat - 1;
                numbers = 1;
-               answer = nums[i];;
-          }
+               answer = nums[i];
      }
      else if (n < 0)
      {
           for(lenth = 0; s <= -1; lenth++)
-          {
                s = n / ten;
                ten = ten * 10;
-          }
+
           int repeat = lenth;
           int nums[lenth];
           for (int i = 0; i < lenth; i++)
-          {
                s = n;
                for (int j = 0; j < repeat - 1; j++)
-               {
                     numbers = numbers * 10;
-               }
+
                if (i == 0)
                {
                     for (int j = 0; s <= -1; j++)
-                    {
                          int s1 = s;                        
                          s = s / (numbers * (j + 1));
                          if (s == 0)
                          {
                               nums[i] = s1 * numbers;
                          }
-                    }
                }
                else
                {
                     int lol = -1;
                     s = q;
                     for (int j = 0; lol <= -1; j++)
-                    {
                          lol = s / (-nums[i - 1] + (numbers * (j + 1)));
                          if (s / (-nums[i - 1] + (numbers * (j + 1))) == 0)
                          {
@@ -120,8 +104,7 @@ int main(void)
                               
                               nums[i] = (nums[i - 1] + -(j * numbers));
                          }
-                                                  
-                    }                    
+                                                                   
                }
                repeat = repeat - 1;
                numbers = 1;
