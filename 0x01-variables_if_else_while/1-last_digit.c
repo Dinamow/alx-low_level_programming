@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/**
+ * main - start point
+ * get n value
+ * doing some math to get answer
+ * Return: 0 (success)
+ */
 int main(void)
 {
      int n;
