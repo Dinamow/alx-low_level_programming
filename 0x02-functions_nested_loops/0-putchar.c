@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - start point 
+ * main - start point
  * put char
  * Return: 0 (success)
 */
@@ -15,5 +15,4 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-    return (0);
-}
+return (0);
