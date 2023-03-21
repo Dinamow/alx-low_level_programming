@@ -1,11 +1,17 @@
 #include "main.h"
-#include <unistd.h>
 /**
- * main - start point
- * print 
+ * main - start point 
+ * put char
  * Return: 0 (success)
 */
-int _putchar(char name)
+int main(void)
 {
-    return (write(1, &name, 1));
+    _putchar("_");
+    _putchar("u");
+    _putchar("t");
+    _putchar("c");
+    _putchar("h");
+    _putchar("a");
+    _putchar("r");
+    return (0);
 }
