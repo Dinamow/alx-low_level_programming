@@ -1,11 +1,11 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * main - start point
  * print 
  * Return: 0 (success)
 */
-int main(void)
+int _putchar(char* name)
 {
-    _putchar("_putchar");
-    return (0);
+    return (write(1, &name, 1));
 }
