@@ -5,6 +5,6 @@ void print_alphabet(void)
 {
     char char1;
     for(char1 = 'a'; char1 <='z'; char1++)
-    _putchar('%c',char1);
+    _putchar(char1);
     _putchar('\n');
 }
