@@ -1,6 +1,6 @@
-#include <stdio.h>
+#ifndef HEADER_FILE
+#define HEADER_FILE
 
 void _putchar(char* name)
-{
-    printf("%s\n", name);
-}
+
+#endif
