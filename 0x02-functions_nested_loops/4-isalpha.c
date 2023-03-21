@@ -1,8 +1,8 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * _isalpha - start point 
- * take parameter c 
+ * _isalpha - start point
+ * int c 
  * Return: 1 (lowercase or uppercase) , 0 (else)
 */
 int _isalpha(int c)
