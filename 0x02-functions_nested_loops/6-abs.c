@@ -5,17 +5,16 @@
  * take input
  * return the absolute value of input
 */
-int _abs(int)
+int _abs(int c)
 { 
-int i;
-if (i > 0)
+if (c > 0)
 {
-return (i);
+return (c);
 }
 else
 {
-i = i * -1;
-return (i);
+c = c * -1;
+return (c);
 }
 
 }
