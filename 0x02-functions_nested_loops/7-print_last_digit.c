@@ -3,6 +3,7 @@
 
 int print_last_digit(int c);
 {
-c = c % 10;
-return (c);
+int i;
+i = c % 10;
+return (i);
 }
