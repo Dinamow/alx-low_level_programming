@@ -5,9 +5,8 @@
  * take input
  * return the absolute value of input
 */
-int _abs(int)
-{
-int i; 
+int _abs(int i)
+{ 
 if (i > 0)
 {
 return (i);
