@@ -1,16 +1,21 @@
 #include "main.h"
 #include <unistd.h>
-
+/**
+ * _abs - start point
+ * take input
+ * return the absolute value of input
+*/
 int _abs(int)
 {
-if (int > 0)
+int i; 
+if (i > 0)
 {
-return (int);
+return (i);
 }
 else
 {
-int = int * -1;
-return (int);
+i = i * -1;
+return (i);
 }
 
 }
