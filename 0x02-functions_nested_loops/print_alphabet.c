@@ -3,6 +3,7 @@
 
 void print_alphabet(void)
 {
-    for(int i = 'a'; i <='z'; i++)
-    _putchar('%c', i);
+    char char1 = 'a'
+    for(char1 = 'a'; char1 <='z'; char1++)
+    _putchar('%c',char1);
 }
