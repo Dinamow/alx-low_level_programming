@@ -1,8 +1,4 @@
 #include "main.h"
-#include <unistd.h>
-
-void jack_bauer(void)
-#include "holberton.h"
 
 /**
  * jack_bauer - Prints the minutes of a day
