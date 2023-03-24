@@ -2,7 +2,7 @@
 
 /**
  * _isupper - start point
- * @int c
+ * take parameter @int c
  * checking it
  * Return 1 (is upper), 0 (else)
 */
