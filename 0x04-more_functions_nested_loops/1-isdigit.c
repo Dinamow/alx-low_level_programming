@@ -2,9 +2,7 @@
 
 /**
  * _isdigit - start point
- * 
  * @c: input
- * 
  * Return: 1 (digit), 0(else)
 */
 
