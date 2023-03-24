@@ -15,10 +15,9 @@ do
     for(j = 0; j < 15; j++)
     _putchar(j + 48);
 i++
+_putchar('\n');
 } while (i < 10);
 
-    
-_putchar('\n');
 }
 
 }
