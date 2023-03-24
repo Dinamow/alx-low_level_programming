@@ -16,6 +16,6 @@ do
     _putchar(j + 48);
 i++;
 _putchar('\n');
-} while (i < 10);
+} while (i <= 10);
 
 }
