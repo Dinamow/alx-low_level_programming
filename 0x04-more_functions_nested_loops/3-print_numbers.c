@@ -7,6 +7,6 @@ do
 {
 _putchar(c);
 c++;
-} while (c <= 9)
+} while (c <= 9);
 
 }
