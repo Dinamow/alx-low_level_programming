@@ -2,11 +2,11 @@
 
 void print_numbers(void)
 {
-int c = 48;
+int c = '0';
 do
 {
 _putchar(c);
 c++;
-} while (c <= 57);
+} while (c <= '9');
 
 }
