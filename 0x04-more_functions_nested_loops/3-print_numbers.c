@@ -8,5 +8,5 @@ do
 _putchar(c);
 c++;
 } while (c <= '9');
-
+_putchar('\n');
 }
