@@ -14,4 +14,5 @@ for (i = 0; s[i] != '\0'; i++)
 chars = i;
 for (i = 0; chars != -1; chars--)
 _putchar(s[chars]);
+_putchar('\n')
 }
