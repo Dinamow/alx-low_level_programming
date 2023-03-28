@@ -14,5 +14,5 @@ chars = i;
 for (i = 0; chars != -1; chars--)
 s0[i] = s[chars];
 for (i = 0; i <= chars; i++)
-s[i] = s0[i]
+s[i] = s0[i];
 }
