@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
- * 
+ * reverse_array - start point
+ * @a: input
+ * @n: input
+ * Return: always 0(success)
 */
 
 void reverse_array(int *a, int n)
