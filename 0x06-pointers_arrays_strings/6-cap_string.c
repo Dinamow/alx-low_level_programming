@@ -3,7 +3,7 @@
 
 
 
-int islower(char c)
+int _islower(char c)
 {
     return (c >= 97 && c <= 122);
 }
