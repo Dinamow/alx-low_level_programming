@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
- * 
+ * _strcmp - start point
+ * @s1: input
+ * @s2: input
+ * do some math
+ * Return: euqal
 */
 
 int _strcmp(char *s1, char *s2)
