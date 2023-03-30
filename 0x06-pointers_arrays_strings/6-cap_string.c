@@ -36,7 +36,7 @@ while (*s)
     {
         founddelimiter = 1;
     }
-    else if (islower(*s) && founddelimiter)
+    else if (_islower(*s) && founddelimiter)
     {
         *s -= 32;
         founddelimiter = 1;
