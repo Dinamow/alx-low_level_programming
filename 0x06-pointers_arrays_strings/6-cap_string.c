@@ -3,9 +3,6 @@
 
 
 
-/// @brief 
-/// @param c 
-/// @return 
 int islower(char c)
 {
     return (c >= 97 && c <= 122);
