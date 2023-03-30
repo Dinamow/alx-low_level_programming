@@ -3,6 +3,9 @@
 
 
 
+/// @brief 
+/// @param c 
+/// @return 
 int islower(char c)
 {
     return (c >= 97 && c <= 122);
@@ -16,7 +19,7 @@ char delimiter[] = " \t\n,.!?\"(){}";
 for (i = 0; i < 12; i++)
 {
     if (c == delimiter[i])
-    retrun(1);
+    retrun (1);
 }
 return (0);
 }
