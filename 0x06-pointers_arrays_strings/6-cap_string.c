@@ -19,7 +19,7 @@ char delimiter[] = " \t\n,.!?\"(){}";
 for (i = 0; i < 12; i++)
 {
     if (c == delimiter[i])
-    retrun (1);
+    return(1);
 }
 return (0);
 }
