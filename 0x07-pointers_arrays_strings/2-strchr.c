@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * _strchr - start point
  * @s: input
  * @c: input
- * Return: s + i (success), NULL (faild) 
+ * Return: s + i (success), NULL (faild)
 */
-
 char *_strchr(char *s, char c)
 {
 unsigned int i;
