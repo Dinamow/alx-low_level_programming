@@ -3,6 +3,7 @@
  * _strchr - start point
  * @s: input
  * @c: input
+ * locating the char with a loop
  * Return: s + i (success), NULL (faild)
 */
 char *_strchr(char *s, char c)
