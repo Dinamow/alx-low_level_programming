@@ -17,5 +17,5 @@ while (i < n);
     s++;
     i++;
 }
-return(*a);
+return(a);
 }
