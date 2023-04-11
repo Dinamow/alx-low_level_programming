@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - start pint
+ * main - start point
  * @argc: input
  * @argv: input
  * print and calculate
- * Reruen: 0 (seccess),1 (failed)
+ * Reruen: 0 (success),1 (failed)
 */
 int main(int argc, char** argv)
 {
