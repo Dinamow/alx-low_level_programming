@@ -5,7 +5,7 @@
  * @argc: input
  * @argv: input
  * print and calculate
- * Reruen: 0 (success),1 (failed)
+ * Return: 0 (success),1 (failed)
 */
 int main(int argc, char** argv)
 {
