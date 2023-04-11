@@ -3,7 +3,7 @@
 /**
  * main - start pint
  * @argc: input
- * @argv" input
+ * @argv: input
  * print and calculate
  * Reruen: 0 (seccess),1 (failed)
 */
