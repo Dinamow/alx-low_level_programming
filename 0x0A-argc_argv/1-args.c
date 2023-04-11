@@ -2,12 +2,12 @@
 /**
  * main - start point
  * @argc: input
+ * @argv: input
  * print
  * Return: Always 0 (success)
 */
 int main(int argc, char **argv)
 {
-(void)argv[];
 printf("%d\n", argc);
 return 0;
 }
