@@ -6,8 +6,9 @@
  * print
  * Return: Always 0 (success)
 */
-int main(int argc, char **argv)
+int main(int argc, char* argv[])
 {
+*argv = "hahahha";
 printf("%d\n", argc);
 return 0;
 }
