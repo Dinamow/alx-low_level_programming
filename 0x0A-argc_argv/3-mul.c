@@ -11,6 +11,6 @@ return (1);
 }
 else
 sum = atoi(argv[argc - 2])* atoi(argv[argc - 1]);
-printf("%d", sum);
+printf("%d\n", sum);
 return 0;
 }
