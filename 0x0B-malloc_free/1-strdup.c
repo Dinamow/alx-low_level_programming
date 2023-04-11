@@ -3,7 +3,7 @@
 
 char *_strdup(char *str)
 {
-char *n = malloc(str * 2);
+char *n = malloc(str * 2) + malloc(str * 2);
 if (n == 0 || str == 0)
 {
 return 0;
