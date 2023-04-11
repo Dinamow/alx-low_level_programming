@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * main - start pint
+ * @argc: input
+ * @argv" input
+ * print and calculate
+ * Reruen: 0 (seccess),1 (failed)
+*/
 int main(int argc, char** argv)
 {
 int sum;
