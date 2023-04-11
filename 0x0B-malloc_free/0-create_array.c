@@ -3,21 +3,18 @@
 
 char *create_array(unsigned int size, char c)
 {
-    if (size == 0)
+    char* n = malloc(size);
+    if (size == 0 || n == NULL)
     {
         return(NULL);
     }
     else
     {
-        c = malloc(sizeof(int)* size);
-        if (c == 0)
+        while (size--)
         {
-            return(NULL);
+            n[size] = c;
         }
-        else
-        {
-            return(c);   
-        }
+        return(n);
     }
     
 }
