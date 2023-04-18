@@ -1,6 +1,5 @@
 #ifndef DOG_H
 #define DOG_h
-
 /**
  * struct dog - start
  * @name: dog's name
