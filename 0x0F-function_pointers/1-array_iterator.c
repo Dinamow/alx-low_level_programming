@@ -1,5 +1,12 @@
 #include "function_pointers.h"
 
+/**
+ * array_iterator - start point
+ * @array: input
+ * @size: input
+ * @acrion: input
+ * Return: void
+*/
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
     int *end = array + size - 1;
