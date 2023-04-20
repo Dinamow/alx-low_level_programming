@@ -1,4 +1,4 @@
-#include "function_iterator.h"
+#include "function_pointers.h"
 /**
  * int_index - start point
  * @array: input
