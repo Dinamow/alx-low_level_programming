@@ -1,6 +1,11 @@
 #include "variadic_functions.h"
 /**
+ * printf_string - start point
+ * @separator: input
+ * @n: input
+ * @...: input
  * 
+ * Return: void
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
