@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * list_len - start point 
- * @h: pointer 
- * 
+ * list_len - start point
+ * @h: pointer
+ *
  * Return: size of list
 */
 
