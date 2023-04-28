@@ -1,8 +1,28 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "lists.h"
 
+typedef struct listint_s
+{
+    int n;
+    struct listint_s *next;
+} listint_t;
+
+size_t print_listint(const listint_t *h)
+{
+    size_t i = 0;
+    if (!h)
+    {
+        return 0;
+    }
+    while (h)
+    {
+        printf("%d\n", h->n);
+        i++;
+        h = h->next;
+    }
+    return (i);
+}
 /**
  * main - check the code
  * 
