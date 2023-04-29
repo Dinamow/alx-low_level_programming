@@ -11,22 +11,34 @@ typedef struct listint_s
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+
 
 int main(void)
 {
     listint_t *head;
 
     head = NULL;
-    add_nodeint(&head, 0);
-    add_nodeint(&head, 1);
-    add_nodeint(&head, 2);
-    add_nodeint(&head, 3);
-    add_nodeint(&head, 4);
-    add_nodeint(&head, 98);
-    add_nodeint(&head, 402);
-    add_nodeint(&head, 1024);
+    add_nodeint_end(&head, 0);
     print_listint(head);
+    free_listint(head);
+    head = NULL;
     return (0);
+}
+
+void free_listint(listint_t *head)
+{
+listint_t *node, *next_node;
+
+if (!head)
+    return;
+node = head;
+while (node)
+{
+    next_node = node->next;
+    free(node);
+    node = next_node;
+}
 }
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
