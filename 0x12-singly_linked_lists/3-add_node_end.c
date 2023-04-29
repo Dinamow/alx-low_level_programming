@@ -26,7 +26,7 @@ new_node->len = _strlen(new_node->str);
 if (node)
 {
 while (node->next)
-node = node->next;
+    node = node->next;
 
 node->next = new_node; 
 }
