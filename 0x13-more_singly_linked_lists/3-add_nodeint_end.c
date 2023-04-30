@@ -18,9 +18,9 @@ ptr->n = n;
 if (node)
 {
 while (node->next)
-    node = node->next;
+node = node->next;
 
-node->next = ptr; 
+node->next = ptr;
 }
 else
 *head = ptr;
