@@ -13,7 +13,7 @@ if (!h)
 return (0);
 while (h)
 {
-printf("%d\n", h->n);
+printf("%d\n", h->n ? h->n : "(nill)");
 i++;
 h = h->next;
 }
