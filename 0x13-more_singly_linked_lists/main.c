@@ -37,18 +37,18 @@ int main(void)
 
 void free_listint2(listint_t **head)
 {
-    listint_t *node, *next_node, *for_head;
-    if (!head)
-        return;
-    node = head;
-    for_head = &head;
-    while (node)
-    {
-        next_node = node->next;
-        free(node);
-        node = next_node;
-    }
-    *for_head = NULL;
+listint_t *node, *next_node;
+
+if (!head)
+return;
+node = *head;
+while (node)
+{
+next_node = node->next;
+free(node);
+node = next_node;
+}
+*head = NULL;
 }
 
 void free_listint(listint_t *head)
