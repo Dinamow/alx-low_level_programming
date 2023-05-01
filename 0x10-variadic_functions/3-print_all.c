@@ -1,78 +1,100 @@
+#include <stdio.h>
 #include "variadic_functions.h"
-/**
- * format_char - start
- * @separator: separator
- * @ap: input
-*/
-void format_char(char *separator, va_list ap)
-{
-    printf("%s%c", separator, va_arg(ap, int));
-}
-/**
- * format_int - start
- * @separator: input
- * @ap: input
-*/
-void format_int(char *separator, va_list ap)
-{
-    printf("%s%d", separator, va_arg(ap, int));
-}
-/**
- * format_float - start
- * @separator: input
- * @ap: input
-*/
-void format_float(char *separator, va_list ap)
-{
-    printf("%s%f", separator, va_arg(ap, double));
-}
-/**
- * format_string - start
- * @separator: input
- * @ap: inpit
-*/
-void format_string(char *separator, va_list ap)
-{
-    char *str = va_arg(ap, char *)
-    
-    switch ((int)(!str))
-        case1:
-            str = "(nil)";
+#include <stdarg.h>
 
-    printf("%s%s", separator, str);
+/**
+ * op_c - Print character .
+ * @form: name va_list
+ *
+ * Return: Nothing.
+ */
+
+void op_c(va_list form)
+{
+	printf("%c", va_arg(form, int));
 }
 /**
- * print_all - start
- * @format: the format
-*/
+ * op_i - Print Integer
+ * @form: name va_list
+ *
+ * Return: Nothing.
+ */
+
+void op_i(va_list form)
+{
+	printf("%i", va_arg(form, int));
+}
+/**
+ * op_f - print FLoat numbers
+ * @form: name of va_list
+ *
+ * Return: Nothing.
+ */
+
+void op_f(va_list form)
+{
+	printf("%f", va_arg(form, double));
+}
+/**
+ * op_s -print string
+ * @form: name va_list
+ *
+ * Return: Nothing.
+ */
+
+void op_s(va_list form)
+{
+	char *str;
+
+	str = va_arg(form, char *);
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", str);
+}
+
+/**
+ * print_all - check the code for Holberton School students.
+ * @format: number of arguments in character format
+ *
+ * Return: Nothing.
+ */
+
 void print_all(const char * const format, ...)
 {
-    int i = 0, j;
-    char *separator = "";
-    va_list ap;
-    token_t tokens[] = {
-        {"c" format_char} ,
-        {"f" format_flaot} ,
-        {"s" format_string} ,
-        {"i" format_int} ,
-        {NULL , NULL}
-    };
 
-    va_start(ap, format);
-    while (format && format[i])
-    {
-        j = 0;
-        while(tokens[j].token)
-        {
-            if (format[i] == tokens[j].tokens[0])
-            {
-                tokens[j].f(separator, ap);
-                separator = ", ";
-            }
-            j++;
-        }
-        i++;
-    }
-    printf("\n");
-    va_end(ap);
+	va_list all;
+	unsigned int i, j;
+	char *separator = "";
+
+	f ops[] = {
+		{"c", op_c},
+		{"i", op_i},
+		{"f", op_f},
+		{"s", op_s},
+		};
+
+	va_start(all, format);
+	i = 0;
+	while (format && format[i])
+	{
+		j = 0;
+		while (j < 4)
+		{
+			if (ops[j].op[0] == format[i])
+			{
+				printf("%s", separator);
+				separator = ", ";
+				ops[j].f(all);
+				break;
+			}
+			j++;
+		}
+	i++;
+	}
+
+	printf("\n");
+	va_end(all);
 }
