@@ -4,7 +4,7 @@
  * sum_listint - start point
  * @head: input
  *
- * Retrun: int
+ * Return: int
 */
 int sum_listint(listint_t *head)
 {
