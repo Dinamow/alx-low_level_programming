@@ -1,21 +1,26 @@
+#include <stdio.h>
 #include "variadic_functions.h"
+#include <stdarg.h>
+
 /**
- * sum_them_all - start point
- * @n: input
- * @...: input
- *
- * Return: the intger to sum
-*/
+ * sum_them_all - check the code for Holberton School students.
+ * @n: number of arguments
+ * Return: Always 0.
+ */
 int sum_them_all(const unsigned int n, ...)
 {
-    int s = 0, i = n;
-    va_list ap;
+	va_list valist;
+	int sum = 0;
+	unsigned int i;
 
-    if (!n)
-        return 0;
-    va_start(ap, n);
-    while(i--)
-        s += va_arg(ap, int);
-    va_end(ap);
-    return (s);
+	va_start(valist, n);
+
+	for (i = 0; i < n; i++)
+	{
+		sum += va_arg(valist, int);
+	}
+
+	va_end(valist);
+
+	return (sum);
 }
