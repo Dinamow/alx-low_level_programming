@@ -1,22 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - start point
- * @argc: input
- * @argv: input
- * print and calculate
- * Return: 0 (success),1 (failed)
-*/
-int main(int argc, char** argv)
+ * main - print args in new line
+ * @argc: int
+ * @argv: list
+ * Return: 0
+ */
+int main(int argc, char *argv[])
 {
-int sum;
-if (argc < 3)
+if (argc == 3)
+{
+int multi, x, y;
+x = atoi(argv[1]);
+y = atoi(argv[2]);
+multi = x *y;
+printf("%d\n", multi);
+return (0);
+}
+else
 {
 printf("Error\n");
 return (1);
 }
-else
-sum = atoi(argv[argc - 2])* atoi(argv[argc - 1]);
-printf("%d\n", sum);
-return 0;
 }
