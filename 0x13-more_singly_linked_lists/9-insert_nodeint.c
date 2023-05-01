@@ -27,14 +27,14 @@ return (new_one);
 node = *head;
 while (node)
 {
-    if (i == idx - 1)
-    {
-        new_one->next = node->next;
-        node->next = new_one;
-        return (new_one);
-    }
-    i++;
-    node = node->next;
+if (i == idx - 1)
+{
+new_one->next = node->next;
+node->next = new_one;
+return (new_one);
+}
+i++;
+node = node->next;
 }
 free(new_one);
 return (NULL);
