@@ -1,13 +1,13 @@
-#include <stdio.h>
+#include "stdio.h"
 /**
- * main - start pint
- * @argc: input
- * @argv: input
- * print
- * Return: Always 0 (success)
-*/
-int main(int argc, char** argv)
+ * main - print arg number
+ * @argc: int
+ * @argv: list
+ * Return: 0
+ */
+int main(int argc, char *argv[])
 {
-printf("%s\n", argv[argc - 1]);
-return 0;
+(void)argc;
+printf("%s\n", argv[0]);
+return (0);
 }
