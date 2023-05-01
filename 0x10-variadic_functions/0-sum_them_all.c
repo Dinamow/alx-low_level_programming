@@ -3,8 +3,8 @@
  * sum_them_all - start point
  * @n: input
  * @...: input
- * 
- * Return: the intger to sum 
+ *
+ * Return: the intger to sum
 */
 int sum_them_all(const unsigned int n, ...)
 {
