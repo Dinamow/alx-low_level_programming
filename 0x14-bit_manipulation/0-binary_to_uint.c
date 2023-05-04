@@ -47,5 +47,5 @@ unsigned int binary_to_uint(const char *b)
     {
         result += arr[x];
     }
-    return (result);   
+    return (result);
 }
