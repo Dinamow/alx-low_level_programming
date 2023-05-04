@@ -1,10 +1,28 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
 
-/**
- * binart_to_unit - start point
- * @b: input
- * Return: unsigned int
-*/
+unsigned int binary_to_uint(const char *b);
+
+int main(void)
+{
+    unsigned int n;
+
+    n = binary_to_uint("1");
+    printf("%u\n", n);
+    n = binary_to_uint("101");
+    printf("%u\n", n);
+    n = binary_to_uint("1e01");
+    printf("%u\n", n);
+    n = binary_to_uint("1100010");
+    printf("%u\n", n);
+    n = binary_to_uint("0000000000000000000110010010");
+    printf("%u\n", n);
+    return (0);
+}
+
+
 unsigned int binary_to_uint(const char *b)
 {
     int count = 0;
@@ -47,5 +65,5 @@ unsigned int binary_to_uint(const char *b)
     {
         result += arr[x];
     }
-    return (result);   
+    return (result);
 }
