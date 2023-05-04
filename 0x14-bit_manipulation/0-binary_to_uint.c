@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binart_to_unit - start point
+ * binary_to_uint - start point
  * @b: input
  * Return: unsigned int
 */
