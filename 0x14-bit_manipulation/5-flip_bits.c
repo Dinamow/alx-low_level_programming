@@ -12,9 +12,9 @@ unsigned long int xor = n ^ m;
 unsigned int count = 0;
 while (xor)
 {
-    if (xor & 1ul)
-    count++;
-    xor = xor >> 1;
+if (xor & 1ul)
+count++;
+xor = xor >> 1;
 }
 return (count);
 }
