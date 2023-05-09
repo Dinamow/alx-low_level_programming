@@ -21,8 +21,8 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
 
-t = read(fd, buf, letters);
-w = write(STDOUT_FILENO, buf, t);
+t = read(fd, &buf[0], letters);
+w = write(STDOUT_FILENO, &buf[0], t);
 
 free(buf);
 close(fd);
