@@ -9,16 +9,23 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int file;
-ssize_t n;
-char buffer[1024 * 8];
-if (!filename || !letters)
+char* buff;
+ssize_t fd;
+ssize_t r;
+ssize_t w;
+
+if (!filename || letters)
 return (0);
-file = open(filename, O_RDONLY);
-if (file == -1)
+
+fd = open(filename, O_RDONLY);
+if (fd == -1)
 return (0);
-n = read(file, &buffer[0], letters);
-n = write(STDOUT_FILENO, &buffer[0], n);
-close(file);
-return(0);
+
+buff = malloc(letters * sizeof(char));
+r = read(fd, buff, letters);
+w = write(STDOUT_FILENO, buff, r);
+
+free (buff);
+close (fd);
+return (w);
 }
