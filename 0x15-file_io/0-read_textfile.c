@@ -24,6 +24,8 @@ return (0);
 buff = malloc(letters * sizeof(char));
 r = read(fd, buff, letters);
 w = write(STDOUT_FILENO, buff, r);
+if (w == -1)
+return (0);
 
 free (buff);
 close (fd);
