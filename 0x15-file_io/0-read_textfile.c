@@ -25,7 +25,7 @@ buff = malloc(letters * sizeof(char));
 r = read(fd, buff, letters);
 if (r == -1)
 return (0);
-w = write(0, buff, r);
+w = write(STDOUT_FILENO, buff, r);
 if (w == -1)
 return (0);
 
