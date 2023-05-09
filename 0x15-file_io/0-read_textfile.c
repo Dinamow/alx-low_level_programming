@@ -21,7 +21,7 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
 
-buf = malloc(1024);
+buf = malloc(letters);
 
 t = read(fd, buf, letters);
 w = write(STDOUT_FILENO, buf, t);
