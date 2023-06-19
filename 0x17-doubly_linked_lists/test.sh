@@ -1,2 +1,2 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c -o e
-valgrind ./e
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 *.c -o e
+./e
