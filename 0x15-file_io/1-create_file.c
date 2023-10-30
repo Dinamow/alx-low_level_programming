@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * creat_file - start point
+ * create_file - start point
  * @filename: input
  * @text_content: input
  *

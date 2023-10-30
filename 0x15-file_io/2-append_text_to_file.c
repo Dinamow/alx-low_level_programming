@@ -5,7 +5,7 @@
  * @filename: input
  * @text_content: input
  *
- * Retrun: int
+ * Return: int
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
