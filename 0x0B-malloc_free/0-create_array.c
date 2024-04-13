@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * create_array - start point
  * @size: input
@@ -10,17 +11,15 @@
 */
 char *create_array(unsigned int size, char c)
 {
-char *n = malloc(size);
-if (size == 0 || n == NULL)
-{
-return (NULL);
-}
-else
-{
-while (size--)
-{
-n[size] = c;
-}
-return (n);
-}
+	char *n = malloc(size);
+
+	if (size == 0 || n == NULL)
+	{
+		return (NULL);
+	}
+	while (size--)
+	{
+		n[size] = c;
+	}
+	return (n);
 }
