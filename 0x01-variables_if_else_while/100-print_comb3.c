@@ -1,6 +1,5 @@
 #include <stdio.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
+
 /**
  * main - Entry point
  *
@@ -9,7 +8,6 @@
 
 int main(void)
 {
-
 	int i = 48, j = 49;
 
 	while (i < 58)

@@ -1,6 +1,5 @@
 #include <stdio.h>
-/* more headers goes there abel*/
-/* betty style doc for function main goes there */
+
 /**
  * main - Entry point
  *
