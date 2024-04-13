@@ -1,4 +1,4 @@
-# first task in c
+# first tasks in c
 
 ## how to compile
 
