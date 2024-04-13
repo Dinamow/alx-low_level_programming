@@ -1,7 +1,13 @@
 #include "main.h"
 
+/**
+ * mul - start point
+ * @a: input
+ * @b: input
+ * Return: a * b
+ */
 int mul(int a, int b)
 {
-int c = a * b;
-return (c);
+	return (a * b);
 }
+
