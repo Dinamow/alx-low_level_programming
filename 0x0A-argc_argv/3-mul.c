@@ -8,18 +8,13 @@
  */
 int main(int argc, char *argv[])
 {
-if (argc == 3)
-{
-int multi, x, y;
-x = atoi(argv[1]);
-y = atoi(argv[2]);
-multi = x *y;
-printf("%d\n", multi);
-return (0);
-}
-else
-{
-printf("Error\n");
-return (1);
-}
+	int multi, x, y;
+
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	printf("%d\n", atoi(argv[2]) * atoi(argv[1]));
+	return (0);
 }
