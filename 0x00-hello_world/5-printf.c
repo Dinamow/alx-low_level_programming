@@ -7,8 +7,6 @@
 */
 int main(void)
 {
-    /*printing*/
-printf("with proper grammar, but the outcome is a piece of art,\n");
-    /*ending*/
-return (0);
+    printf("with proper grammar, but the outcome is a piece of art,\n");
+    return (0);
 }
