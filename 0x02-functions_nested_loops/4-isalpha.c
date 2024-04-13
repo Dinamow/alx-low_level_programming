@@ -1,23 +1,18 @@
 #include "main.h"
 #include <unistd.h>
+
 /**
- * _isalpha - start point
- * take parameter int c
- * Return: 1 (lowercase or uppercase) , 0 (else)
-*/
+ * _isalpha - checks for alphabetic character
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, 0 is returned.
+ */
 int _isalpha(int c)
 {
-if (c >= 'a' && c <= 'z')
-{
-return (1);
-}
-else if (c >= 'A' && c <= 'Z')
-{
-return (1);
-}
-else
-{
-return (0);
-}
-
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else if (c >= 'A' && c <= 'Z')
+		return (1);
+	return (0);
 }

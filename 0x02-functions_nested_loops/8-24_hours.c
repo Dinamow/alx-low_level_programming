@@ -1,32 +1,24 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * jack_bauer - Prints the minutes of a day
- * 24 the remake tho
- * Return: no return
+ * jack_bauer - prints min and hours
+ * Return: Return nothing
  */
 void jack_bauer(void)
 {
-int a, b, c, d;
+	int hour, min;
 
-for (a = 48; a <= 50; a++)
-{
-for (b = 48; b <= 57; b++)
-{
-for (c = 48; c <= 53; c++)
-{
-for (d = 48; d <= 57; d++)
-{
-if (a >= 50 && b >= 52)
-break;
-_putchar(a);
-_putchar(b);
-_putchar(58);
-_putchar(c);
-_putchar(d);
-_putchar('\n');
-}
-}
-}
-}
+	for (hour = 0; hour < 24; hour++)
+	{
+		for (min = 0; min < 60; min++)
+		{
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((min / 10) + '0');
+			_putchar((min % 10) + '0');
+			_putchar('\n');
+		}
+	}
 }
