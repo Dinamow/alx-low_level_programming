@@ -3,6 +3,11 @@
 
 #include <stdio.h>
 
+/**
+ * _putchar - a Function that ...
+ * @name: Description of name.
+ * Return: Description of the return value.
+ */
 int _putchar(char name);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
@@ -16,3 +21,4 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 
 #endif
+

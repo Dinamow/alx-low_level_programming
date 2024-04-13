@@ -6,7 +6,7 @@
  * followed by a new line
  * @a: array to be printed
  * @n: number of elements to print
-*/
+ */
 void print_array(int *a, int n)
 {
 	int i;
@@ -18,5 +18,5 @@ void print_array(int *a, int n)
 		else
 			printf(", %d", a[i]);
 	}
-		printf("\n");
+	printf("\n");
 }
