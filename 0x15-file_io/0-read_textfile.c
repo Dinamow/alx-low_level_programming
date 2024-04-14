@@ -6,7 +6,7 @@
  * @letters: input
  *
  * Return: ssize_t
-*/
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t file, let, w;

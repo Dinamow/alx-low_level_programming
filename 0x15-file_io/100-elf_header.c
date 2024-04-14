@@ -13,9 +13,9 @@ void get_magic(Elf64_Ehdr *ehdr, char *fname, int fd)
 	unsigned char *mgc = ehdr->e_ident;
 
 	if (mgc[EI_MAG0] == ELFMAG0 &&
-	    mgc[EI_MAG1] == ELFMAG1 &&
-	    mgc[EI_MAG2] == ELFMAG2 &&
-	    mgc[EI_MAG3] == ELFMAG3)
+		mgc[EI_MAG1] == ELFMAG1 &&
+		mgc[EI_MAG2] == ELFMAG2 &&
+		mgc[EI_MAG3] == ELFMAG3)
 	{
 		printf("Magic:  ");
 		while (i < EI_NIDENT)
@@ -178,7 +178,7 @@ void get_type(Elf64_Ehdr *ehdr)
 void get_entry(Elf64_Ehdr *ehdr)
 {
 	printf("%-35s0x%lx\n", "Entry point address:",
-	       (unsigned long) ehdr->e_entry);
+		   (unsigned long)ehdr->e_entry);
 }
 
 /**
