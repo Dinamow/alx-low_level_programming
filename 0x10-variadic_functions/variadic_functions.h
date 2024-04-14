@@ -13,7 +13,6 @@ void print_all(const char * const format, ...);
  * @f: Function.
  *
  */
-
 typedef struct format
 {
 	char *op;

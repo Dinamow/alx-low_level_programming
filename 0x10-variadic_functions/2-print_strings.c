@@ -15,9 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *str;
 
 	if (separator == NULL)
-	{
 		separator = "";
-	}
 
 	va_start(string, n);
 
@@ -31,9 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		printf("%s", str);
 		if (n == i + 1)
-		{
 			break;
-		}
 		printf("%s", separator);
 	}
 	printf("\n");

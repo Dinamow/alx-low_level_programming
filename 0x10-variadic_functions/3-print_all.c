@@ -8,40 +8,39 @@
  *
  * Return: Nothing.
  */
-
 void op_c(va_list form)
 {
 	printf("%c", va_arg(form, int));
 }
+
 /**
  * op_i - Print Integer
  * @form: name va_list
  *
  * Return: Nothing.
  */
-
 void op_i(va_list form)
 {
 	printf("%i", va_arg(form, int));
 }
+
 /**
  * op_f - print FLoat numbers
  * @form: name of va_list
  *
  * Return: Nothing.
  */
-
 void op_f(va_list form)
 {
 	printf("%f", va_arg(form, double));
 }
+
 /**
  * op_s -print string
  * @form: name va_list
  *
  * Return: Nothing.
  */
-
 void op_s(va_list form)
 {
 	char *str;
@@ -61,10 +60,8 @@ void op_s(va_list form)
  *
  * Return: Nothing.
  */
-
 void print_all(const char * const format, ...)
 {
-
 	va_list all;
 	unsigned int i, j;
 	char *separator = "";
