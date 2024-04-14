@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * sum_dlistint - start point
  * @head: input
@@ -16,4 +17,3 @@ int sum_dlistint(dlistint_t *head)
 	}
 	return (sum);
 }
-
